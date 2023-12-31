@@ -17,10 +17,6 @@ export const FancyTabBarProvider = ({
 }) => {
   const [isTabBarVisible, setIsTabBarVisible] = useState(true);
 
-  const toggleTabBarVisibility = () => {
-    setIsTabBarVisible((prevState) => !prevState);
-  };
-
   const value = {
     isTabBarVisible,
     hideTabBar: () => setIsTabBarVisible(false),
